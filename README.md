@@ -55,10 +55,6 @@ python main.py
 
 5. You can generate multiple passwords by changing the options and clicking the "Generate Password" button again.
 
-## Screenshots
-
-![Password Generator](Screenshot.png)
-
 ## Contributing
 
 Contributions are welcome! If you find any issues or want to add new features, please open an issue or submit a pull request.
