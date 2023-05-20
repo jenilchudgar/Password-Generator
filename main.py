@@ -28,7 +28,7 @@ chars: list = list()
 
 root = Tk()
 root.title("Password Generator")
-root.iconbitmap("icon.ico")
+root.iconbitmap("img/icon.ico")
 
 # Copy Text
 
@@ -518,7 +518,7 @@ pass_entry.insert(0,f"{' ' * 18}N.A")
 pass_entry["state"] = DISABLED
 pass_entry.grid(row=0,column=1,padx=5,pady=5)
 
-img = ImageTk.PhotoImage(Image.open("copy.png"))
+img = ImageTk.PhotoImage(Image.open("img/copy.png"))
 pass_copy_icon = Button(pass_frame,image=img,command=copy)
 pass_copy_icon.grid(row=0,column=2,padx=5,pady=5)
 
