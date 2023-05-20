@@ -1,4 +1,2 @@
-Tkinter
 Pillow
 Pyperclip
-Random
