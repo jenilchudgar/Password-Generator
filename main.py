@@ -51,7 +51,7 @@ def generate():
 
         lower_case_letters = [chr(i) for i in range(97, 123)]
         upper_case_letters = [chr(i) for i in range(65, 91)]
-        numbers = [chr(i) for i in range(48, 57)]
+        numbers = [chr(i) for i in range(48, 58)]
         special_characters = [chr(i) for i in range(33, 43)]
 
         if (difficulty == EASY):
@@ -321,8 +321,8 @@ def generate():
             # 4. Only Last 2
             elif (chars == [0,1,1]):
                 # 30% Letters -> All Lower
-                # 30% Numbers
-                # 40% Special Characters
+                # 40% Numbers
+                # 30% Special Characters
                 num_letters = int(0.3 * length)
                 num_nos = int(0.3 * length)
                 num_special_chars = length - (num_nos + num_letters)
@@ -350,10 +350,10 @@ def generate():
             
             # 6. 1st and Last
             elif (chars == [1,0,1]):
-                # 50% Letters -> 30% Upper and 20% Lower
-                # 50% Special Characters
-                num_u_letters = int(0.3 * length)
-                num_l_letters = int(0.2 * length)
+                # 65% Letters -> 40% Upper and 25% Lower
+                # 35% Special Characters
+                num_u_letters = int(0.4 * length)
+                num_l_letters = int(0.25 * length)
                 num_sp = length - (num_u_letters + num_l_letters)
 
                 x = random.sample(lower_case_letters, num_u_letters)
@@ -383,11 +383,11 @@ def generate():
             # 8. All Options
             elif (chars == [1,1,1]):
                 # 30% Letters -> 20% Upper and 10% Lower
-                # 30% Numbers
-                # 40% Special Characters
+                # 40% Numbers 25*0.4
+                # 30% Special Characters
                 num_u_letters = int(0.2 * length)
                 num_l_letters = int(0.1 * length)
-                num_nos = int(0.3 * length)
+                num_nos = int(0.4 * length)
                 num_sp = length - (num_u_letters + num_l_letters + num_nos)
 
                 x = random.sample(lower_case_letters, num_u_letters)
