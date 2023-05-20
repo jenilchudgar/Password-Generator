@@ -30,13 +30,11 @@ root = Tk()
 root.title("Password Generator")
 root.iconbitmap("img/icon.ico")
 root.resizable(False, False)
-                                    
+
 # Copy Text
 def copy(): pycopy(pass_entry.get())
 
 # Generate Password
-
-
 def generate():
     # Access global Variables
     global length, difficulty, chars
