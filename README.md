@@ -57,7 +57,7 @@ python main.py
 
 ## Screenshots
 
-![Password Generator](screenshot.png)
+![Password Generator](Screenshot.png)
 
 ## Contributing
 
