@@ -29,10 +29,9 @@ chars: list = list()
 root = Tk()
 root.title("Password Generator")
 root.iconbitmap("img/icon.ico")
+root.resizable(False, False)
 
 # Copy Text
-
-
 def copy(): pycopy(pass_entry.get())
 
 # Generate Password
